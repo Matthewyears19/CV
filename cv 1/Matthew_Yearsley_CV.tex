@@ -1,0 +1,138 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[british]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[a4paper,top=16mm,bottom=17mm,left=19mm,right=19mm]{geometry}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{needspace}
+
+\definecolor{accent}{HTML}{17364B}
+\definecolor{muted}{HTML}{475569}
+\definecolor{rulecolour}{HTML}{D5DDE4}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=accent,
+  linkcolor=accent,
+  pdfauthor={Matthew Yearsley},
+  pdftitle={Matthew Yearsley — Curriculum Vitae}
+}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{2em}
+\linespread{1.06}
+
+\titleformat{\section}
+ {\normalfont\bfseries\color{accent}\large}
+ {}{0pt}{}
+ [\vspace{0pt}\color{rulecolour}\titlerule]
+\titlespacing*{\section}{0pt}{15pt}{8pt}
+
+\setlist[itemize]{
+ leftmargin=1.2em,
+ topsep=2pt,
+ itemsep=2pt,
+ parsep=0pt,
+ partopsep=0pt,
+ label={\textcolor{accent}{\textbullet}}
+}
+
+\newcommand{\datedheading}[2]{%
+ \noindent\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}r@{}}
+ \textbf{#1} & {\small\color{muted}#2}
+ \end{tabularx}\par
+}
+\newcommand{\projectheading}[1]{\needspace{5\baselineskip}\vspace{3pt}{\bfseries #1}\par\vspace{-1pt}}
+\newcommand{\workheading}[2]{\needspace{4\baselineskip}\vspace{4pt}\datedheading{#1}{#2}\vspace{1pt}}
+
+\begin{document}
+
+
+\begin{center}
+ {\fontsize{22}{25}\selectfont\bfseries\color{accent} Matthew Yearsley}\par
+ \vspace{3pt}
+ {\small Computer Science Undergraduate \textbar{} Industrial Placement Candidate}\par
+ \vspace{5pt}
+ {\small
+ \href{tel:+447546141970}{+44 7546 141970}
+ \quad\textcolor{rulecolour}{\textbar}\quad
+ \href{mailto:matthew.years19@gmail.com}{matthew.years19@gmail.com}
+ }\par
+ \vspace{2pt}
+ {\small
+ \href{https://github.com/Matthewyears19}{github.com/Matthewyears19}
+ \quad\textcolor{rulecolour}{\textbar}\quad
+ \href{https://www.linkedin.com/in/matthew-yearsley}{linkedin.com/in/matthew-yearsley}
+ }\par
+\end{center}
+\vspace{-7pt}
+
+\section*{Personal Profile}
+Computer Science undergraduate studying in Manchester, seeking an industrial placement in Dublin for the next academic year. I am particularly interested in technological developments and aspire to be at the forefront of the AI revolution, integrating AI into successful workflows. I currently live at home and commute every day by motorcycle. In my spare time, I enjoy cooking and bring that interest to my part-time job as a chef. I also enjoy hiking, having walked each of the Three Peaks, as well as long road trips and badminton.
+
+\section*{Education}
+\datedheading{University of Manchester}{September 2024 -- Present}
+BSc Computer Science with Industrial Experience and Integrated Foundation Year. \\
+First-year average: First-Class.
+\vspace{5pt}
+
+\datedheading{First Intuition \textnormal{(Association of Accounting Technicians, AAT)}}{October 2023 -- July 2024}
+AAT Level 2 -- Distinction. Completed alongside an apprenticeship programme.
+\vspace{5pt}
+
+\datedheading{Sir John Deane's Sixth Form College}{September 2021 -- July 2023}
+A-levels: Mathematics (A), Economics (A), Politics (A*).
+
+\section*{Projects}
+\projectheading{Accessibility Learning Platform: Kilburn Klues -- University of Manchester}
+\begin{itemize}
+ \item Formed a group with five peers to build an app of our choosing. We developed a learning tool for the university's notoriously confusing Computer Science building, the Kilburn Building. We gamified the learning experience by building a GeoGuessr-style game.
+ \item We developed a strong rapport outside of class, enhancing communication. This aided in managing deadlines, delegating tasks, setting standards and resolving team disagreements.
+ \item Prioritised accessibility through dark mode, adjustable font sizes, dictation and a dedicated accessibility guide.
+ \item Developed technical skills in Git version control, including branching to manage collaborative codebases, as well as Linux, HTML, CSS, MySQL, Python and Java.
+ \item Won the 'Best Concept' award for our application and gave an acceptance speech. I also took a leadership role in presentations, drawing on previous experience.
+\end{itemize}
+
+\projectheading{Updating the Online Presence of a Local Business -- Moston Pharmacy}
+\begin{itemize}
+ \item Collaborated with a local pharmacy to update its online presence.
+ \item Provided advice and instructions for managing its newly created Facebook page.
+ \item Updated a 15-year-old website using user-centred design principles, taking ageing demographics and accessibility into account.
+ \item Hosted the website using GitHub Pages and a registered domain.
+ \item Developed strong working relationships with pharmacy staff, gaining an understanding of client requirements and NHS data-security considerations.
+\end{itemize}
+
+\newpage
+\projectheading{AI Integration \& Workplace Efficiency -- Walker Begley}
+\begin{itemize}
+ \item Organised and delivered multiple training sessions demonstrating how ChatGPT could improve efficiency and streamline administrative processes within the firm.
+ \item Used practical examples from my own work to demonstrate the potential applications of AI in accounting and everyday business operations.
+ \item Developed an AI-assisted learning resource to help colleagues understand the firm's transition to an Employee Ownership Trust (EOT), simultaneously improving their familiarity with AI tools.
+\end{itemize}
+
+\projectheading{Technology \& Innovation Presentation -- Walker Begley}
+\begin{itemize}
+ \item Delivered a presentation at the firm's 24th anniversary conference, just two months after joining, outlining my vision for how emerging technologies could transform the business over the next decade.
+ \item Communicated technical concepts and future technological developments to a group of accounting professionals with varying technical expertise.
+ \item Received positive feedback from two founding directors for my confidence, clarity and ability to communicate complex ideas to a broad audience.
+\end{itemize}
+
+\section*{Work History}
+\workheading{The Coachman Pub and Dining -- Kitchen Porter / Chef de Partie}{October 2024 -- Present}
+Promoted to Chef de Partie early in summer 2025 for demonstrating initiative, reliability and the ability to work under pressure. Developed my time-management skills and maintained a strong work ethic while balancing studies and work. Attained Level 3 Food Hygiene and Safety certification.
+
+\workheading{Walker Begley -- Client Executive}{September 2023 -- September 2024}
+I joined Walker Begley, a medium-sized accountancy practice, the summer after my A-levels. I worked with a range of clients, including actors, car dealerships, consultants, restaurants and property businesses. During the final three months of my employment, I completed various complex tasks with minimal oversight. Working here taught me professional office practices and teamwork, alongside the use of Microsoft Office, especially Excel, and specialist software such as Dext (OCR software). This sparked my interest in computer science and led me to explore different uses of LLMs in business settings and other productivity-enhancing software.
+
+\workheading{NEXT PLC -- Retail Assistant}{June 2021 -- May 2023}
+Developed confidence alongside customer service, communication and teamwork skills while balancing part-time employment with A-level studies.
+
+\end{document}
