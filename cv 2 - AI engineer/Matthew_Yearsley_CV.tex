@@ -1,0 +1,138 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[british]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[a4paper,top=16mm,bottom=17mm,left=19mm,right=19mm]{geometry}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{needspace}
+
+\definecolor{accent}{HTML}{17364B}
+\definecolor{muted}{HTML}{475569}
+\definecolor{rulecolour}{HTML}{D5DDE4}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=accent,
+  linkcolor=accent,
+  pdfauthor={Matthew Yearsley},
+  pdftitle={Matthew Yearsley - AI Engineering Placement CV}
+}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{2em}
+\linespread{1.06}
+
+\titleformat{\section}
+ {\normalfont\bfseries\color{accent}\large}
+ {}{0pt}{}
+ [\vspace{0pt}\color{rulecolour}\titlerule]
+\titlespacing*{\section}{0pt}{15pt}{8pt}
+
+\setlist[itemize]{
+ leftmargin=1.2em,
+ topsep=2pt,
+ itemsep=2pt,
+ parsep=0pt,
+ partopsep=0pt,
+ label={\textcolor{accent}{\textbullet}}
+}
+
+\newcommand{\datedheading}[2]{%
+ \noindent\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}r@{}}
+ \textbf{#1} & {\small\color{muted}#2}
+ \end{tabularx}\par
+}
+\newcommand{\projectheading}[1]{\needspace{5\baselineskip}\vspace{3pt}{\bfseries #1}\par\vspace{-1pt}}
+\newcommand{\workheading}[2]{\needspace{4\baselineskip}\vspace{4pt}\datedheading{#1}{#2}\vspace{1pt}}
+
+\begin{document}
+
+\begin{center}
+ {\fontsize{22}{25}\selectfont\bfseries\color{accent} Matthew Yearsley}\par
+ \vspace{3pt}
+ {\small Computer Science Undergraduate \textbar{} 2027 AI Engineering Placement Candidate}\par
+ \vspace{5pt}
+ {\small
+ \href{tel:+447546141970}{+44 7546 141970}
+ \quad\textcolor{rulecolour}{\textbar}\quad
+ \href{mailto:matthew.years19@gmail.com}{matthew.years19@gmail.com}
+ }\par
+ \vspace{2pt}
+ {\small
+ \href{https://github.com/Matthewyears19}{github.com/Matthewyears19}
+ \quad\textcolor{rulecolour}{\textbar}\quad
+ \href{https://www.linkedin.com/in/matthew-yearsley}{linkedin.com/in/matthew-yearsley}
+ }\par
+\end{center}
+\vspace{-7pt}
+
+\section*{Personal Profile}
+Computer Science undergraduate at the University of Manchester with a First-Class first-year average, seeking a 2027 industrial placement in Dublin. Interested in artificial intelligence, machine learning and applying LLMs to practical business problems. Experienced in Python and Java programming, collaborative software development and introducing generative AI into professional workflows. Bring analytical skills, commercial awareness and the ability to explain technology to non-technical colleagues.
+
+\section*{Technical Skills}
+\textbf{Programming:} Python (including pandas), Java, C, SQL, HTML, CSS, JavaScript.\\[2pt]
+\textbf{Development tools:} Git, GitHub, Linux, Flask, MySQL; collaborative branching and version control.\\[2pt]
+\textbf{AI and data:} Minimax, alpha-beta pruning, heuristic search, constraint satisfaction; data cleaning and analysis; practical use of LLMs and prompt design.\\[2pt]
+\textbf{Business and analytics:} Microsoft Excel, business process analysis, stakeholder communication.
+
+\section*{Education}
+\datedheading{University of Manchester}{September 2024 -- Present}
+BSc Computer Science with Industrial Experience and Integrated Foundation Year.\\
+First-year average: First-Class. \textbf{Relevant modules:} Machine Learning; Introduction to Artificial Intelligence; Software Engineering.
+\vspace{5pt}
+
+\datedheading{First Intuition \textnormal{(Association of Accounting Technicians, AAT)}}{October 2023 -- July 2024}
+AAT Level 2 -- Distinction, completed alongside an apprenticeship programme.
+\vspace{5pt}
+
+\datedheading{Sir John Deane's Sixth Form College}{September 2021 -- July 2023}
+A-levels: Mathematics (A), Economics (A), Politics (A*).
+
+\section*{Technical Projects \& AI Experience}
+\projectheading{Reversi AI -- University of Manchester}
+\begin{itemize}
+ \item Implemented a Java-based Reversi AI using minimax search and alpha-beta pruning to choose moves.
+ \item Applied board evaluation heuristics and depth-limited search, considering trade-offs between decision quality and computational cost.
+ \item Tested the implementation against automated assessment cases and refined its search behaviour.
+\end{itemize}
+
+\newpage
+\projectheading{AI Integration \& Workplace Efficiency -- Walker Begley}
+\begin{itemize}
+ \item Organised and delivered staff training sessions demonstrating how ChatGPT could support accounting and administrative workflows, drawing on practical examples from my role.
+ \item Developed an AI-assisted learning resource to help colleagues understand the firm's transition to an Employee Ownership Trust (EOT).
+ \item Presented emerging technology and its potential business applications at the firm's 24th anniversary conference, explaining technical ideas to a non-specialist audience.
+\end{itemize}
+
+\projectheading{Kilburn Klues: Accessible Learning Platform -- University of Manchester}
+\begin{itemize}
+ \item Worked in a team of six to develop an interactive, GeoGuessr-style learning application for the university's Kilburn Building.
+ \item Used Python, Flask, MySQL and web technologies; collaborated through Git branching and version control to integrate team contributions.
+ \item Supported accessibility features including dark mode, adjustable font sizes and dictation. The project received the \emph{Best Concept} award.
+\end{itemize}
+
+\projectheading{Moston Pharmacy: Website Modernisation}
+\begin{itemize}
+ \item Updated a 15-year-old website using user-centred design principles, with particular consideration for accessibility and older users.
+ \item Consulted pharmacy staff on requirements and NHS data-security considerations; deployed the site with GitHub Pages and a registered domain.
+\end{itemize}
+
+\section*{Professional Experience}
+\workheading{Walker Begley -- Client Executive}{September 2023 -- September 2024}
+Worked with clients across several industries at an accountancy practice, developing analytical skills, professional judgement and commercial awareness. Used Microsoft Excel, Dext and other accounting systems to support client work, progressing to complex tasks with minimal supervision.
+
+\workheading{The Coachman Pub and Dining -- Kitchen Porter / Chef de Partie}{October 2024 -- Present}
+Promoted to Chef de Partie in 2025 for initiative, reliability and performance under pressure. Balance professional responsibilities with full-time university study; hold Level 3 Food Hygiene and Safety certification.
+
+\workheading{NEXT PLC -- Retail Assistant}{June 2021 -- May 2023}
+Developed customer service and teamwork skills while balancing part-time employment with A-level studies.
+
+\end{document}
